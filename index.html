@@ -13,10 +13,15 @@
   <p>หากติดตั้งสคริปต์ถูกต้อง ป๊อปอัปจะแสดงผลขึ้นมาบนหน้านี้</p>
 
   <!-- Cookie Consent Scripts -->
-  <script src="https://cookie-consent.csigroups.com/assets/js/tag-loader.js"></script>
-  <script src="https://cookie-consent.csigroups.com/assets/js/cookie-consent.js"></script>
-  <script>
-    CookieConsent.init({ consentEndpoint: 'https://cookie-consent.csigroups.com/api/consent' });
-  </script>
+  <link rel="stylesheet" href="https://cookie-consent.csigroups.com/assets/css/cookie-consent.css">
+<script src="https://cookie-consent.csigroups.com/assets/js/tag-loader.js"></script>
+<script src="https://cookie-consent.csigroups.com/assets/js/cookie-consent.js"></script>
+<script>
+  CookieConsent.init({
+    consentEndpoint: 'https://cookie-consent.csigroups.com/api/consent',
+    // logoUrl: 'https://your-domain.com/path/to/logo.png', // optional: your own logo (not the CSI logo)
+    // logoAlt: 'Your Company',                            // optional: alt text for the logo
+  });
+</script>
 </body>
 </html>
