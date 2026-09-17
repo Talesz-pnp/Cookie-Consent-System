@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cookie Consent Test</title>
-
-  <!-- Cookie Consent Stylesheet -->
   <link rel="stylesheet" href="https://cookie-consent.csigroups.com/assets/css/cookie-consent.css">
 </head>
-<link rel="stylesheet" href="https://cookie-consent.csigroups.com/assets/css/cookie-consent.css">
-<script src="https://cookie-consent.csigroups.com/assets/js/tag-loader.js"></script>
-<script src="https://cookie-consent.csigroups.com/assets/js/cookie-consent.js"></script>
-<script>
-  CookieConsent.init({
-    consentEndpoint: 'https://cookie-consent.csigroups.com/api/consent',
-    // logoUrl: 'https://your-domain.com/path/to/logo.png', // optional: your own logo (not the CSI logo)
-    // logoAlt: 'Your Company',                            // optional: alt text for the logo
-  });
-</script>
+<body style="font-family: sans-serif; padding: 40px; text-align: center;">
+  <h1>หน้าเว็บสำหรับทดสอบ Cookie Consent</h1>
+  <p>หากติดตั้งสคริปต์ถูกต้อง ป๊อปอัปจะแสดงผลขึ้นมาบนหน้านี้</p>
+
+  <script src="https://cookie-consent.csigroups.com/assets/js/tag-loader.js"></script>
+  <script src="https://cookie-consent.csigroups.com/assets/js/cookie-consent.js"></script>
+  <script src="https://cookie-consent.csigroups.com/assets/js/lang-th.js"></script>
+  <script>
+    CookieConsent.init({
+      consentEndpoint: 'https://cookie-consent.csigroups.com/api/consent'
+    });
+  </script>
 </body>
 </html>
