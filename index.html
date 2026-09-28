@@ -9,6 +9,16 @@
 <body style="font-family: sans-serif; padding: 40px; text-align: center;">
   <h1>หน้าเว็บสำหรับทดสอบ Cookie Consent</h1>
   <p>หากติดตั้งสคริปต์ถูกต้อง ป๊อปอัปจะแสดงผลขึ้นมาบนหน้านี้</p>
-  
+  <link rel="stylesheet" href="https://deploycookie.csigroups.com/assets/css/cookie-consent.css">
+<script src="https://deploycookie.csigroups.com/assets/js/tag-loader.js"></script>
+<script src="https://deploycookie.csigroups.com/assets/js/cookie-consent.js"></script>
+<script src="https://deploycookie.csigroups.com/assets/js/lang-th.js"></script>
+<script>
+  CookieConsent.init({
+    consentEndpoint: 'https://deploycookie.csigroups.com/api/consent',
+    logoUrl: 'https://deploycookie.csigroups.com/Image%20Logo/banner-logo.png', // โลโก้ที่อัปโหลดไว้ในแท็บ Theme ของเซิร์ฟเวอร์นี้ — อัปโหลดโลโก้ใหม่แล้วค่านี้จะอัปเดตให้เองไม่ต้องแก้โค้ด (ถ้ายังไม่เคยอัปโหลด จะไม่โชว์โลโก้ ไม่พัง)
+    // logoAlt: 'Your Company', // optional: alt text for the logo
+  });
+</script>
 </body>
 </html>
